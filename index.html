@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSRX Gauge Support — MSRX</title>
+  <meta name="description" content="MSRX Gauge: a light, private system monitor for the menu bar, by MSRX.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="app-icon.png">
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="logo.png" alt="MSRX"><span>MSRX Gauge</span></a>
+      <div class="nav-links"><a href="index.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </nav>
+  <main>
+    <div class="hero">
+      <img src="app-icon.png" alt="MSRX Gauge app icon">
+      <div>
+        <p class="eyebrow">Support</p>
+        <h1>MSRX <span>Gauge</span></h1>
+        <p class="tagline">FUTURE. INTELLIGENCE. IMPACT.</p>
+      </div>
+    </div>
+    <p class="subtitle">A light system monitor that lives in the menu bar. CPU, memory, network, disk, battery, graphics and thermal state, with 60-second charts and alerts you set yourself. Everything stays on your computer.</p>
+
+    <h2>Getting started</h2>
+    <ul>
+      <li>Click the gauge in the menu bar to open the dropdown. Each card shows a reading and its last 60 seconds.</li>
+      <li>Open <strong>Settings</strong> (the gear in the dropdown, or &#8984;,) to choose what the menu bar shows: an icon only, one reading, or a compact strip of several.</li>
+      <li>Turn on <strong>Open at login</strong> in Settings if you want the gauge there every time you start up.</li>
+      <li>Alerts are all off until you turn them on in Settings &rarr; Alerts.</li>
+    </ul>
+
+    <h2>Questions</h2>
+    <h3>Why are there no temperatures or fan speeds?</h3>
+    <p>Those values come from a sensor controller that apps from the App Store are not allowed to open. We tested it inside the app&rsquo;s sandbox and the request is refused, so rather than guess or show made-up numbers, MSRX Gauge shows the system&rsquo;s own <em>thermal state</em> (Normal, Warm, Hot, Critical), which is what the system uses to decide when to slow down to cool off.</p>
+
+    <h3>Why does the free disk space differ from other tools?</h3>
+    <p>For the startup disk, MSRX Gauge shows the space available for important use. That includes space the system can free on demand (for example caches and optimised storage), the same way the file browser counts it. Command-line tools often show less because they leave that space out.</p>
+
+    <h3>How is &ldquo;memory used&rdquo; worked out?</h3>
+    <p>Used = app memory + wired memory + compressed memory, the usual breakdown. Cached files are listed separately because the system gives that memory back the moment an app needs it. <em>Memory pressure</em> is the better sign of trouble: Normal is fine even when &ldquo;used&rdquo; looks high.</p>
+
+    <h3>Alerts are on but no notification appears</h3>
+    <p>Notifications may be turned off for MSRX Gauge. Settings &rarr; Alerts says so and has a button that opens the notification settings, where you can switch <em>Allow notifications</em> on. Use <strong>Send a test alert</strong> to check. Each alert shows once, waits until the reading has clearly recovered, and repeats at most every 15 minutes.</p>
+
+    <h3>How much does the gauge itself use?</h3>
+    <p>Very little. With the dropdown closed and a 2-second refresh it measured around 1% of one processor core and under 40&nbsp;MB of memory on our test machine. Network, disk-speed and graphics readings are only taken while you can see them. Showing just the icon in the menu bar uses the least.</p>
+
+    <h3>What is the Process Explorer button?</h3>
+    <p>If MSRX Process Explorer is installed, the dropdown shows a button that opens it, so you can see which apps are busy. If it is not installed, the button does not appear.</p>
+
+    <h3>Requirements</h3>
+    <p>macOS 15 or later.</p>
+
+    <div class="box">
+      <p><strong>Need help or found a problem?</strong></p>
+      <p>Write to <a href="mailto:mrinalsinghraja@gmail.com">mrinalsinghraja@gmail.com</a>. Please say what you saw and which version you have (About MSRX Gauge, the &#9432; button in the dropdown).</p>
+    </div>
+  </main>
+  <footer>
+    <span>&copy; 2026 MSRX &middot; Mrinal Singh Raja</span>
+    <span><a href="index.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:mrinalsinghraja@gmail.com">Contact</a></span>
+  </footer>
+</body>
+</html>
