@@ -24,7 +24,7 @@
         <p class="tagline">FUTURE. INTELLIGENCE. IMPACT.</p>
       </div>
     </div>
-    <p class="subtitle">A light system monitor that lives in the menu bar. CPU, memory, network, disk, battery, graphics and thermal state, with 60-second charts and alerts you set yourself. Everything stays on your computer.</p>
+    <p class="subtitle">A light system monitor that lives in the menu bar. CPU, memory, network, disk, battery, graphics and thermal state, with charts of the last minute or hour, a health check, alerts you set yourself, a PDF report and an on-device assistant. Everything stays on your computer.</p>
 
     <h2>Getting started</h2>
     <ul>
@@ -32,6 +32,9 @@
       <li>Open <strong>Settings</strong> (the gear in the dropdown, or &#8984;,) to choose what the menu bar shows: an icon only, one reading, or a compact strip of several.</li>
       <li>Turn on <strong>Open at login</strong> in Settings if you want the gauge there every time you start up.</li>
       <li>Alerts are all off until you turn them on in Settings &rarr; Alerts.</li>
+      <li>The switch at the top of the dropdown changes the CPU, memory, battery and thermal charts between the last minute and the last hour. The health check above the cards says whether anything needs a look.</li>
+      <li><strong>Report</strong> (&#8984;R in the dropdown) builds a two-page system health report. Save it as a PDF or an image, or copy it as text.</li>
+      <li><strong>Ask</strong> (&#8984;K in the dropdown) answers questions such as &ldquo;Why is my computer slow?&rdquo; using the live readings and the last hour.</li>
     </ul>
 
     <h2>Questions</h2>
@@ -52,6 +55,12 @@
 
     <h3>What is the Process Explorer button?</h3>
     <p>If MSRX Process Explorer is installed, the dropdown shows a button that opens it, so you can see which apps are busy. If it is not installed, the button does not appear.</p>
+
+    <h3>Why can&rsquo;t I use Ask?</h3>
+    <p>Ask uses the language model built into the operating system, which runs on your computer. It needs system version 27 or later, a computer that supports the on-device model, and the model turned on in system settings. If any of those is missing, the Ask window says which, and everything else in MSRX Gauge keeps working. Answers come from a small model and can be wrong, so check anything important.</p>
+
+    <h3>What does the report contain?</h3>
+    <p>Page 1: the overall status, the health check (CPU, memory, disk, battery, temperature, restarts), facts about the computer, last-hour charts and the live readings at a glance. Page 2: every reading, with last-hour averages and peaks. The hour figures cover the time MSRX Gauge was running. The report is saved only where you choose.</p>
 
     <h3>Requirements</h3>
     <p>macOS 15 or later.</p>
